@@ -1,0 +1,26 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/keh_gddb/dbtable.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+table_name = "Boons"
+id_type = 2
+column = [ {
+"name": "effectname",
+"value_type": 1000
+}, {
+"name": "speffectid",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [ {
+"effectname": "Runecleaving",
+"id": 0,
+"speffectid": 5010600
+}, {
+"effectname": "Greater Runecleaving",
+"id": 1,
+"speffectid": 0
+} ]

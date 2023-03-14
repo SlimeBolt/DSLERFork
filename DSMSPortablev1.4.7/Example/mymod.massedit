@@ -1,0 +1,2 @@
+param EquipParamGoods: id 190: Name: = Rune Arc (Infinite use);
+param EquipParamGoods: id 190: isConsume: = 0;

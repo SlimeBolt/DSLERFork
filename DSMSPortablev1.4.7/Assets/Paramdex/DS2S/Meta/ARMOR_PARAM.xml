@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMMETA XmlVersion="0">
+  <Enums>
+    <Enum Name="Slot">
+      <Option Value="255" Name="Debug" />
+      <Option Value="1" Name="Head" />
+      <Option Value="2" Name="Body" />
+      <Option Value="3" Name="Arms" />
+      <Option Value="4" Name="Legs" />
+    </Enum>
+  </Enums>
+  <Self Row0Dummy="" />
+  <Field>
+    <SlotCategory Enum="Slot" />
+    <ArmorSetID Wiki="The ID for this armor set. Do not forget this when creating custom armor." />
+    <EquipInterfereID Refs="EquipInterfereParam" />
+    <ArmorReinforceID Refs="ArmorReinforceParam" />
+  </Field>
+</PARAMMETA>

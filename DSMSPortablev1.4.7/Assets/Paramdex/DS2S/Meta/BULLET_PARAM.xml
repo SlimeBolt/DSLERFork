@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMMETA XmlVersion="0">
+  <Self Row0Dummy="" />
+  <Field>
+    <EffectID Wiki="The SFX Id of this particular bullet. Sometimes unlisted here and sometimes provided by the EMEVD." />
+    <SpawnLocation Wiki="Where the effect/bullet will spawn in relation to the parent." />
+    <ChildBullet1ID1 Refs="BulletParam" />
+    <ChildBullet1ID2 Refs="BulletParam" />
+    <ChildBullet2ID1 Refs="BulletParam" />
+    <ChildBullet2ID2 Refs="BulletParam" />
+    <ChildBullet3ID1 Refs="BulletParam" />
+    <ChildBullet3ID2 Refs="BulletParam" />
+  </Field>
+</PARAMMETA>

@@ -1,0 +1,54 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/keh_gddb/dbtable.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+table_name = "ScalingOptions"
+id_type = 2
+column = [ {
+"name": "minstr",
+"value_type": 1002
+}, {
+"name": "mindex",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [ {
+"id": 0,
+"mindex": 9,
+"minstr": 5
+}, {
+"id": 1,
+"mindex": 5,
+"minstr": 9
+}, {
+"id": 2,
+"mindex": 12,
+"minstr": 14
+}, {
+"id": 3,
+"mindex": 16,
+"minstr": 17
+}, {
+"id": 4,
+"mindex": 7,
+"minstr": 12
+}, {
+"id": 5,
+"mindex": 10,
+"minstr": 10
+}, {
+"id": 6,
+"mindex": 10,
+"minstr": 18
+}, {
+"id": 7,
+"mindex": 2,
+"minstr": 16
+}, {
+"id": 8,
+"mindex": 0,
+"minstr": 0
+} ]

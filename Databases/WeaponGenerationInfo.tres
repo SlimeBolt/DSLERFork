@@ -1,0 +1,1532 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://addons/keh_gddb/database.gd" type="Script" id=1]
+[ext_resource path="res://addons/keh_gddb/dbtable.gd" type="Script" id=2]
+[ext_resource path="res://Databases/Boons.tres" type="Resource" id=3]
+[ext_resource path="res://Databases/ScalingOptions.tres" type="Resource" id=4]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 2 )
+table_name = "ArmorEffects"
+id_type = 2
+column = [ {
+"name": "speffectid",
+"value_type": 1002
+}, {
+"name": "description",
+"value_type": 1000
+}, {
+"name": "prefix",
+"value_type": 1000
+}, {
+"name": "suffix",
+"value_type": 1000
+}, {
+"name": "interfix",
+"value_type": 1000
+}, {
+"name": "isbehaviourspeffect",
+"value_type": 1002
+}, {
+"name": "magictoolid",
+"value_type": 1002
+}, {
+"name": "rarityname",
+"value_type": 1000
+}, {
+"name": "talismaniconid",
+"value_type": 1002
+}, {
+"name": "talismansortid",
+"value_type": 1002
+}, {
+"name": "talismanname",
+"value_type": 1000
+} ]
+ref_table = {
+}
+rowlist = [ {
+"description": "INT +2",
+"id": 0,
+"interfix": "Intelligent",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Studious",
+"rarityname": "",
+"speffectid": 6108000,
+"suffix": "of Intelligence",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 300000
+}, {
+"description": "STR +2",
+"id": 1,
+"interfix": "Strong",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Strengthening",
+"rarityname": "",
+"speffectid": 6108100,
+"suffix": "of Strength",
+"talismaniconid": 18220,
+"talismanname": "",
+"talismansortid": 300010
+}, {
+"description": "DEX +2",
+"id": 2,
+"interfix": "Nimble",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Dextrous",
+"rarityname": "",
+"speffectid": 6108200,
+"suffix": "of Dexterity",
+"talismaniconid": 18360,
+"talismanname": "",
+"talismansortid": 300020
+}, {
+"description": "FTH +2",
+"id": 3,
+"interfix": "Holy",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Pious",
+"rarityname": "",
+"speffectid": 6108300,
+"suffix": "of Piety",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 300030
+}, {
+"description": "END +2",
+"id": 4,
+"interfix": "Bracing",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Enduring",
+"rarityname": "",
+"speffectid": 6108400,
+"suffix": "of Endurance",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 300040
+}, {
+"description": "ARC +2",
+"id": 5,
+"interfix": "Arcane",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Arcane",
+"rarityname": "",
+"speffectid": 6108500,
+"suffix": "of Arcane",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 300050
+}, {
+"description": "INT +3",
+"id": 6,
+"interfix": "Booksmart",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Sorceror's",
+"rarityname": "",
+"speffectid": 6051000,
+"suffix": "of Great Intelligence",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 300060
+}, {
+"description": "Reduced damage from headshots",
+"id": 7,
+"interfix": "Ironhead",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Hardskull",
+"rarityname": "",
+"speffectid": 6044000,
+"suffix": "of Skull Protection",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "ARC +3",
+"id": 8,
+"interfix": "Arcanist",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Arcanist's",
+"rarityname": "",
+"speffectid": 6091100,
+"suffix": "of Great Arcane",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Slowly restores HP when below 18%",
+"id": 9,
+"interfix": "Stabilizing",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Preserving",
+"rarityname": "",
+"speffectid": 6069000,
+"suffix": "of Preservation",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Increases damage from thrown Pot items",
+"id": 10,
+"interfix": "Potent-Pot",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Potbrewer's",
+"rarityname": "",
+"speffectid": 6112000,
+"suffix": "of the Potbrewer",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Increases stamina regeneration speed by 8%",
+"id": 11,
+"interfix": "Staminizing",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Virility",
+"rarityname": "",
+"speffectid": 5311400,
+"suffix": "of Virility",
+"talismaniconid": 18160,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Restores 6.5% HP on defeating an enemy",
+"id": 12,
+"interfix": "Soulcapturing",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Blasphemous",
+"rarityname": "",
+"speffectid": 5031400,
+"suffix": "of Blasphemy",
+"talismaniconid": 18810,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Restores 3% HP on defeating an enemy",
+"id": 13,
+"interfix": "Bloodsucking",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Vampiric",
+"rarityname": "",
+"speffectid": 5120100,
+"suffix": "of Vampirism",
+"talismaniconid": 18810,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Restore 3HP every second",
+"id": 14,
+"interfix": "Restoring",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Restorative",
+"rarityname": "",
+"speffectid": 5321400,
+"suffix": "of Restoration",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "ARC +1",
+"id": 15,
+"interfix": "Minor Arcane",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Minor Arcanist's",
+"rarityname": "",
+"speffectid": 6096300,
+"suffix": "of Minor Arcane",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Inflicts damage when rolling into enemies",
+"id": 16,
+"interfix": "Spiked",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Spined",
+"rarityname": "",
+"speffectid": 6021010,
+"suffix": "of the Briar",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Attracts enemy aggression",
+"id": 17,
+"interfix": "Taunting",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Enraging",
+"rarityname": "",
+"speffectid": 6031000,
+"suffix": "of Taunting",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "VIG +1",
+"id": 18,
+"interfix": "Invigorating",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Minor Invigorating",
+"rarityname": "",
+"speffectid": 6074000,
+"suffix": "of Invigoration",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "FTH +2, INT +2, -10% HP",
+"id": 19,
+"interfix": "Glintsage",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Glintsage's",
+"rarityname": "",
+"speffectid": 6160000,
+"suffix": "of the Glintsage",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Silences wearer's footsteps",
+"id": 20,
+"interfix": "Shadowwalking",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Shadow's",
+"rarityname": "",
+"speffectid": 6018010,
+"suffix": "of Shadowwalking",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "MND +3, Stamina -10%",
+"id": 21,
+"interfix": "Summoner",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Summoner's",
+"rarityname": "",
+"speffectid": 6091000,
+"suffix": "of the Summoner",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "INT +3, ARC +3, Stamina -18%",
+"id": 23,
+"interfix": "Glintwitch",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Graven Witch's",
+"rarityname": "",
+"speffectid": 6083400,
+"suffix": "of the Graven Witch",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "MND +1",
+"id": 24,
+"interfix": "Novice Mage",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Novice Mage's",
+"rarityname": "",
+"speffectid": 6074100,
+"suffix": "of the Novice Mage",
+"talismaniconid": 18410,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "FTH +1",
+"id": 25,
+"interfix": "Minor Preacher",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Minor Preacher's",
+"rarityname": "",
+"speffectid": 6175000,
+"suffix": "of the Minor Preacher",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Heals others, but not the wearer",
+"id": 26,
+"interfix": "Companion",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Companion's",
+"rarityname": "",
+"speffectid": 6193010,
+"suffix": "of the Companion",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Strengthens Thorn sorceries by 5%",
+"id": 22,
+"interfix": "Thorn",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Mad Tongue's",
+"rarityname": "",
+"speffectid": 6012020,
+"suffix": "of the Mad Tongue",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Strengthens Cold sorceries by 10%",
+"id": 27,
+"interfix": "Snow Witch",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Snow Witch's",
+"rarityname": "",
+"speffectid": 6101000,
+"suffix": "of the Snow Witch",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 403046
+}, {
+"description": "Strengthens Carian Sword sorceries by 15%",
+"id": 39,
+"interfix": "Caria",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Carian",
+"rarityname": "",
+"speffectid": 1911,
+"suffix": "of Caria",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403013
+}, {
+"description": "Strengthens Glintblade sorceries by 15%",
+"id": 40,
+"interfix": "Glintblade",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Glintblade's",
+"rarityname": "",
+"speffectid": 1912,
+"suffix": "of the Glintblade",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403014
+}, {
+"description": "Strengthens Stonedigger sorceries by 20%",
+"id": 41,
+"interfix": "Stonedigger",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Stonedigger's",
+"rarityname": "",
+"speffectid": 1913,
+"suffix": "of the Stonedigger",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403015
+}, {
+"description": "Strengthens Full Moon sorceries by 10%",
+"id": 42,
+"interfix": "Rennala",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Rennala's",
+"rarityname": "",
+"speffectid": 1910,
+"suffix": "of Rennala",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403016
+}, {
+"description": "Strengthens Magma sorceries by 15%",
+"id": 43,
+"interfix": "Gelmir",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Gelmir's",
+"rarityname": "",
+"speffectid": 1917,
+"suffix": "of Mount Gelmir",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403017
+}, {
+"description": "Strengthens Gravity sorceries by 30%",
+"id": 44,
+"interfix": "Starscourge",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Starscourge's",
+"rarityname": "",
+"speffectid": 1920,
+"suffix": "of the Starscourge",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403018
+}, {
+"description": "Strengthens Night sorceries by 30%",
+"id": 45,
+"interfix": "Night",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Night's",
+"rarityname": "",
+"speffectid": 1921,
+"suffix": "of the Night",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403019
+}, {
+"description": "Strengthens Death sorceries by 10%",
+"id": 46,
+"interfix": "Death Prince",
+"isbehaviourspeffect": 0,
+"magictoolid": 1,
+"prefix": "Death Prince's",
+"rarityname": "",
+"speffectid": 1919,
+"suffix": "of the Death Prince",
+"talismaniconid": 18411,
+"talismanname": "",
+"talismansortid": 403020
+}, {
+"description": "Generates Runes on successful attacks",
+"id": 29,
+"interfix": "Runecleaver",
+"isbehaviourspeffect": 1,
+"magictoolid": 0,
+"prefix": "Runecleaving",
+"rarityname": "",
+"speffectid": 5010600,
+"suffix": "of Runecleaving",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Restores 4FP on defeating an enemy",
+"id": 30,
+"interfix": "Battlemage",
+"isbehaviourspeffect": 0,
+"magictoolid": 0,
+"prefix": "Battlemage's",
+"rarityname": "",
+"speffectid": 5141100,
+"suffix": "of the Battlemage",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 400000
+}, {
+"description": "Strengthens Golden Order incantations by 10%",
+"id": 28,
+"interfix": "Erdtree Faithful",
+"isbehaviourspeffect": 0,
+"magictoolid": 2,
+"prefix": "Erdtree Faithful's",
+"rarityname": "",
+"speffectid": 6104000,
+"suffix": "of the Erdtree Faithful",
+"talismaniconid": 18032,
+"talismanname": "",
+"talismansortid": 403047
+}, {
+"description": "Strengthens Beastial incantations by 10%",
+"id": 31,
+"interfix": "Beast",
+"isbehaviourspeffect": 0,
+"magictoolid": 2,
+"prefix": "Beast's",
+"rarityname": "",
+"speffectid": 1925,
+"suffix": "of the Beastial Sanctum",
+"talismaniconid": 18800,
+"talismanname": "",
+"talismansortid": 403041
+}, {
+"description": "Strengthens Frenzied Flame incantations by 10%",
+"id": 32,
+"interfix": "Madman",
+"isbehaviourspeffect": 0,
+"magictoolid": 2,
+"prefix": "Madman's",
+"rarityname": "",
+"speffectid": 1928,
+"suffix": "of the Madman",
+"talismaniconid": 18730,
+"talismanname": "",
+"talismansortid": 403042
+}, {
+"description": "Strengthens Godslayer incantations by 10%",
+"id": 33,
+"interfix": "Godslayer",
+"isbehaviourspeffect": 0,
+"magictoolid": 2,
+"prefix": "Godslayer's",
+"rarityname": "",
+"speffectid": 1922,
+"suffix": "of the Godslayer",
+"talismaniconid": 18040,
+"talismanname": "",
+"talismansortid": 403043
+}, {
+"description": "Strengthens Dragon incantations by 15%",
+"id": 34,
+"interfix": "Dragon",
+"isbehaviourspeffect": 0,
+"magictoolid": 2,
+"prefix": "Dragon's",
+"rarityname": "",
+"speffectid": 1924,
+"suffix": "of the Dragon",
+"talismaniconid": 18492,
+"talismanname": "",
+"talismansortid": 403044
+}, {
+"description": "Strengthens Fire Monk and Giant's Flame incantations by 20%",
+"id": 35,
+"interfix": "Fire Giant",
+"isbehaviourspeffect": 0,
+"magictoolid": 2,
+"prefix": "Fire Giant's",
+"rarityname": "",
+"speffectid": 1923,
+"suffix": "of the Fire Giants",
+"talismaniconid": 18512,
+"talismanname": "",
+"talismansortid": 403045
+} ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+table_name = "DamageTypes"
+id_type = 2
+column = [ {
+"name": "type",
+"value_type": 1000
+}, {
+"name": "spAttribute",
+"value_type": 1002
+}, {
+"name": "chance",
+"value_type": 600
+}, {
+"name": "mandatorybehspeffect",
+"value_type": 1002
+}, {
+"name": "eqwparamvalue",
+"value_type": 1000
+}, {
+"name": "spEffectMsgId0",
+"value_type": 1002
+}, {
+"name": "residentSfxId",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [ {
+"chance": 5.0,
+"eqwparamvalue": "attackBasePhysics",
+"id": 0,
+"mandatorybehspeffect": 0,
+"residentSfxId": 0,
+"spAttribute": 0,
+"spEffectMsgId0": 0,
+"type": ""
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBaseFire",
+"id": 1,
+"mandatorybehspeffect": 0,
+"residentSfxId": 303001,
+"spAttribute": 11,
+"spEffectMsgId0": 0,
+"type": "Fire"
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBaseThunder",
+"id": 2,
+"mandatorybehspeffect": 0,
+"residentSfxId": 303011,
+"spAttribute": 12,
+"spEffectMsgId0": 0,
+"type": "Lightning"
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBaseMagic",
+"id": 3,
+"mandatorybehspeffect": 0,
+"residentSfxId": 303071,
+"spAttribute": 10,
+"spEffectMsgId0": 0,
+"type": "Magic"
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBaseDark",
+"id": 4,
+"mandatorybehspeffect": 0,
+"residentSfxId": 303131,
+"spAttribute": 13,
+"spEffectMsgId0": 0,
+"type": "Sacred"
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBasePhysics",
+"id": 5,
+"mandatorybehspeffect": 106000,
+"residentSfxId": 303061,
+"spAttribute": 10,
+"spEffectMsgId0": 6401,
+"type": "Poison"
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBasePhysics",
+"id": 6,
+"mandatorybehspeffect": 105000,
+"residentSfxId": 303091,
+"spAttribute": 0,
+"spEffectMsgId0": 6501,
+"type": "Serrated"
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBasePhysics",
+"id": 7,
+"mandatorybehspeffect": 107500,
+"residentSfxId": 303111,
+"spAttribute": 10,
+"spEffectMsgId0": 6601,
+"type": "Frost"
+}, {
+"chance": 1.0,
+"eqwparamvalue": "attackBaseMagic",
+"id": 8,
+"mandatorybehspeffect": 6451,
+"residentSfxId": 303101,
+"spAttribute": 10,
+"spEffectMsgId0": 6651,
+"type": "Sleep"
+}, {
+"chance": 0.8,
+"eqwparamvalue": "attackBaseFire",
+"id": 9,
+"mandatorybehspeffect": 6752,
+"residentSfxId": 0,
+"spAttribute": 11,
+"spEffectMsgId0": 6701,
+"type": "Madness"
+} , {
+"chance": 0.8,
+"eqwparamvalue": "attackBaseMagic",
+"id": 10,
+"mandatorybehspeffect": 6601,
+"residentSfxId": 0,
+"spAttribute": 10,
+"spEffectMsgId0": 6451,
+"type": "Scarlet Rot"
+} , {
+"chance": 0.4,
+"eqwparamvalue": "attackBaseMagic",
+"id": 11,
+"mandatorybehspeffect": 108000,
+"residentSfxId": 0,
+"spAttribute": 13,
+"spEffectMsgId0": 6550,
+"type": "Death Blight"
+} ]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+table_name = "Rarities"
+id_type = 2
+column = [ {
+"name": "name",
+"value_type": 1000
+}, {
+"name": "mindmgmultiplier",
+"value_type": 1003
+}, {
+"name": "maxdmgmultiplier",
+"value_type": 1003
+}, {
+"name": "multidamagetypechance",
+"value_type": 1003
+}, {
+"name": "minmultitypedamage",
+"value_type": 1002
+}, {
+"name": "maxmultitypedamage",
+"value_type": 1002
+}, {
+"name": "DropChance",
+"value_type": 1002
+}, {
+"name": "selectionchance",
+"value_type": 600
+}, {
+"name": "extraeffect0chance",
+"value_type": 1003
+}, {
+"name": "extraeffect1chance",
+"value_type": 1003
+}, {
+"name": "reinforceid",
+"value_type": 1002
+}, {
+"name": "sellamount",
+"value_type": 1002
+}, {
+"name": "rarityvalue",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [ {
+"DropChance": 50,
+"extraeffect0chance": 0.1,
+"extraeffect1chance": 0.01,
+"id": 0,
+"maxdmgmultiplier": 1.2,
+"maxmultitypedamage": 40,
+"mindmgmultiplier": 0.9,
+"minmultitypedamage": 20,
+"multidamagetypechance": 0.05,
+"name": "Common",
+"rarityvalue": 0,
+"reinforceid": 9500,
+"selectionchance": 30.0,
+"sellamount": 250
+}, {
+"DropChance": 40,
+"extraeffect0chance": 0.2,
+"extraeffect1chance": 0.03,
+"id": 1,
+"maxdmgmultiplier": 1.3,
+"maxmultitypedamage": 60,
+"mindmgmultiplier": 1.1,
+"minmultitypedamage": 30,
+"multidamagetypechance": 0.1,
+"name": "Uncommon",
+"rarityvalue": 0,
+"reinforceid": 9500,
+"selectionchance": 25.0,
+"sellamount": 500
+}, {
+"DropChance": 30,
+"extraeffect0chance": 0.3,
+"extraeffect1chance": 0.05,
+"id": 2,
+"maxdmgmultiplier": 1.5,
+"maxmultitypedamage": 70,
+"mindmgmultiplier": 1.3,
+"minmultitypedamage": 40,
+"multidamagetypechance": 0.15,
+"name": "Rare",
+"rarityvalue": 1,
+"reinforceid": 9600,
+"selectionchance": 22.0,
+"sellamount": 750
+}, {
+"DropChance": 20,
+"extraeffect0chance": 0.4,
+"extraeffect1chance": 0.08,
+"id": 3,
+"maxdmgmultiplier": 1.65,
+"maxmultitypedamage": 75,
+"mindmgmultiplier": 1.55,
+"minmultitypedamage": 32,
+"multidamagetypechance": 0.3,
+"name": "Treasured",
+"rarityvalue": 2,
+"reinforceid": 9600,
+"selectionchance": 16.0,
+"sellamount": 1250
+}, {
+"DropChance": 15,
+"extraeffect0chance": 0.5,
+"extraeffect1chance": 0.1,
+"id": 4,
+"maxdmgmultiplier": 1.9,
+"maxmultitypedamage": 95,
+"mindmgmultiplier": 1.7,
+"minmultitypedamage": 50,
+"multidamagetypechance": 0.5,
+"name": "Ancestral",
+"rarityvalue": 2,
+"reinforceid": 9700,
+"selectionchance": 13.0,
+"sellamount": 3500
+}, {
+"DropChance": 10,
+"extraeffect0chance": 0.7,
+"extraeffect1chance": 0.13,
+"id": 5,
+"maxdmgmultiplier": 2.3,
+"maxmultitypedamage": 120,
+"mindmgmultiplier": 2.1,
+"minmultitypedamage": 70,
+"multidamagetypechance": 0.8,
+"name": "Legendary",
+"rarityvalue": 3,
+"reinforceid": 9800,
+"selectionchance": 11.0,
+"sellamount": 7500
+}, {
+"DropChance": 8,
+"extraeffect0chance": 0.8,
+"extraeffect1chance": 0.2,
+"id": 6,
+"maxdmgmultiplier": 2.7,
+"maxmultitypedamage": 150,
+"mindmgmultiplier": 2.4,
+"minmultitypedamage": 90,
+"multidamagetypechance": 0.9,
+"name": "Mythical",
+"rarityvalue": 3,
+"reinforceid": 9800,
+"selectionchance": 9.0,
+"sellamount": 15000
+}, {
+"DropChance": 5,
+"extraeffect0chance": 0.9,
+"extraeffect1chance": 0.4,
+"id": 7,
+"maxdmgmultiplier": 3.2,
+"maxmultitypedamage": 200,
+"mindmgmultiplier": 2.8,
+"minmultitypedamage": 160,
+"multidamagetypechance": 1.0,
+"name": "Demigod's",
+"rarityvalue": 3,
+"reinforceid": 9900,
+"selectionchance": 6.0,
+"sellamount": 20000
+}, {
+"DropChance": 1,
+"extraeffect0chance": 1.0,
+"extraeffect1chance": 0.6,
+"id": 8,
+"maxdmgmultiplier": 3.5,
+"maxmultitypedamage": 300,
+"mindmgmultiplier": 3.3,
+"minmultitypedamage": 250,
+"multidamagetypechance": 1.0,
+"name": "Godslaying",
+"rarityvalue": 3,
+"reinforceid": 9900,
+"selectionchance": 1.0,
+"sellamount": 50000
+} ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+table_name = "TalismanInfo"
+id_type = 2
+column = [ {
+"name": "iconid",
+"value_type": 1002
+}, {
+"name": "name",
+"value_type": 1000
+}, {
+"name": "effectid_lesser",
+"value_type": 1002
+}, {
+"name": "effectid",
+"value_type": 1002
+}, {
+"name": "effectid_greater",
+"value_type": 1003
+}, {
+"name": "effectid_ultimate",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [  ]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 2 )
+table_name = "UpgradePaths"
+id_type = 2
+column = [ {
+"name": "itemneeded",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+table_name = "WeaponModelIDs"
+id_type = 2
+column = [ {
+"name": "weaponmodelid",
+"value_type": 1002
+}, {
+"name": "iconid",
+"value_type": 1002
+}, {
+"name": "weapontypeid",
+"value_type": 1002
+}, {
+"name": "hasenemydropgroup",
+"value_type": 1001
+}, {
+"name": "enemydropgroup",
+"value_type": 1000
+}, {
+"name": "hasspecialname",
+"value_type": 1001
+}, {
+"name": "specialname",
+"value_type": 1000
+}, {
+"name": "additionalminreq",
+"value_type": 1003
+}, {
+"name": "sortId",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [ {
+"additionalminreq": 0.0,
+"enemydropgroup": "Banished Knight",
+"hasenemydropgroup": true,
+"hasspecialname": true,
+"iconid": 10088,
+"id": 0,
+"sortId": 1207000,
+"specialname": "Banished Knight's Greatsword",
+"weaponmodelid": 203,
+"weapontypeid": 2
+}, {
+"additionalminreq": 0.1,
+"enemydropgroup": "Banished Knight",
+"hasenemydropgroup": true,
+"hasspecialname": true,
+"iconid": 10683,
+"id": 1,
+"sortId": 2802000,
+"specialname": "Banished Knight's Halberd",
+"weaponmodelid": 1003,
+"weapontypeid": 7
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": false,
+"iconid": 10680,
+"id": 2,
+"sortId": 2701000,
+"specialname": "Halberd",
+"weaponmodelid": 1001,
+"weapontypeid": 7
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10040,
+"id": 3,
+"sortId": 1005000,
+"specialname": "Longsword",
+"weaponmodelid": 200,
+"weapontypeid": 1
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10004,
+"id": 4,
+"sortId": 1002000,
+"specialname": "Reduvia",
+"weaponmodelid": 105,
+"weapontypeid": 0
+}, {
+"additionalminreq": 0.2,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10082,
+"id": 5,
+"sortId": 1206000,
+"specialname": "Iron Greatsword",
+"weaponmodelid": 606,
+"weapontypeid": 2
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10003,
+"id": 6,
+"sortId": 1001000,
+"specialname": "Misericorde",
+"weaponmodelid": 103,
+"weapontypeid": 0
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": false,
+"iconid": 10000,
+"id": 7,
+"sortId": 1000000,
+"specialname": "Dagger",
+"weaponmodelid": 100,
+"weapontypeid": 0
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10014,
+"id": 8,
+"sortId": 1006000,
+"specialname": "Bloodstained Dagger",
+"weaponmodelid": 110,
+"weapontypeid": 0
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10041,
+"id": 9,
+"sortId": 1101000,
+"specialname": "Shortsword",
+"weaponmodelid": 199,
+"weapontypeid": 1
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10042,
+"id": 10,
+"sortId": 1100000,
+"specialname": "Broadsword",
+"weaponmodelid": 201,
+"weapontypeid": 1
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10044,
+"id": 11,
+"sortId": 1102000,
+"specialname": "Straight Sword",
+"weaponmodelid": 207,
+"weapontypeid": 1
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10045,
+"id": 13,
+"sortId": 1104000,
+"specialname": "Weathered Straight Sword",
+"weaponmodelid": 214,
+"weapontypeid": 1
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10046,
+"id": 14,
+"sortId": 1103000,
+"specialname": "Ornamental Straight Sword",
+"weaponmodelid": 215,
+"weapontypeid": 1
+}, {
+"additionalminreq": 0.1,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10440,
+"id": 15,
+"sortId": 2203000,
+"specialname": "Large Club",
+"weaponmodelid": 850,
+"weapontypeid": 6
+}, {
+"additionalminreq": 0.2,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10441,
+"id": 16,
+"sortId": 2400000,
+"specialname": "Greathorn Hammer",
+"weaponmodelid": 803,
+"weapontypeid": 6
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": false,
+"iconid": 10400,
+"id": 17,
+"sortId": 1903000,
+"specialname": "Mace",
+"weaponmodelid": 802,
+"weapontypeid": 5
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "Fire Monk",
+"hasenemydropgroup": true,
+"hasspecialname": true,
+"iconid": 10408,
+"id": 18,
+"sortId": 2207000,
+"specialname": "Flamemace",
+"weaponmodelid": 806,
+"weapontypeid": 5
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10402,
+"id": 19,
+"sortId": 2200000,
+"specialname": "Curved Club",
+"weaponmodelid": 805,
+"weapontypeid": 5
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10403,
+"id": 20,
+"sortId": 2201000,
+"specialname": "Warpick",
+"weaponmodelid": 809,
+"weapontypeid": 5
+}, {
+"additionalminreq": 0.1,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10451,
+"id": 21,
+"sortId": 2408000,
+"specialname": "Brick Hammer",
+"weaponmodelid": 865,
+"weapontypeid": 6
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10443,
+"id": 22,
+"sortId": 2405000,
+"specialname": "Great Mace",
+"weaponmodelid": 852,
+"weapontypeid": 6
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10445,
+"id": 23,
+"sortId": 2401000,
+"specialname": "Celebrant's Skull",
+"weaponmodelid": 860,
+"weapontypeid": 6
+}, {
+"additionalminreq": 0.1,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10080,
+"id": 24,
+"sortId": 1107000,
+"specialname": "Bastard Sword",
+"weaponmodelid": 600,
+"weapontypeid": 2
+}, {
+"additionalminreq": 0.1,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10081,
+"id": 25,
+"sortId": 1200000,
+"specialname": "Forked Greatsword",
+"weaponmodelid": 604,
+"weapontypeid": 2
+}, {
+"additionalminreq": 0.1,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10083,
+"id": 26,
+"sortId": 1202000,
+"specialname": "Lordsworn's Greatsword",
+"weaponmodelid": 607,
+"weapontypeid": 2
+}, {
+"additionalminreq": 0.1,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10084,
+"id": 27,
+"sortId": 1203000,
+"specialname": "Knight's Greatsword",
+"weaponmodelid": 609,
+"weapontypeid": 2
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10401,
+"id": 28,
+"sortId": 2204000,
+"specialname": "Club",
+"weaponmodelid": 800,
+"weapontypeid": 5
+}, {
+"additionalminreq": 0.0,
+"enemydropgroup": "",
+"hasenemydropgroup": false,
+"hasspecialname": true,
+"iconid": 10051,
+"id": 29,
+"sortId": 1103007,
+"specialname": "Coded Sword",
+"weaponmodelid": 222,
+"weapontypeid": 1
+} ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+table_name = "WeaponTypes"
+id_type = 2
+column = [ {
+"name": "basename",
+"value_type": 1000
+}, {
+"name": "mindamage",
+"value_type": 1002
+}, {
+"name": "maxdamage",
+"value_type": 1002
+}, {
+"name": "minstaminadamage",
+"value_type": 1002
+}, {
+"name": "maxstaminadamage",
+"value_type": 1002
+}, {
+"name": "wepType",
+"value_type": 1002
+}, {
+"name": "weaponCategory",
+"value_type": 1002
+}, {
+"name": "baseweight",
+"value_type": 1003
+}, {
+"name": "requirementmultiplier",
+"value_type": 1003
+}, {
+"name": "prefscalingid",
+"value_type": 1002
+}, {
+"name": "physGuardCutRate",
+"value_type": 1003
+}, {
+"name": "isdefensive",
+"value_type": 1001
+}, {
+"name": "wepMotionCategory",
+"value_type": 1002
+}, {
+"name": "maxthrowAtkRate",
+"value_type": 1002
+}, {
+"name": "wepmotionOneHandId",
+"value_type": 1002
+}, {
+"name": "wepmotionBothHandId",
+"value_type": 1002
+} ]
+ref_table = {
+}
+rowlist = [ {
+"basename": "Dagger",
+"baseweight": 1.5,
+"id": 0,
+"isdefensive": false,
+"maxdamage": 94,
+"maxstaminadamage": "Banished Knight",
+"maxthrowAtkRate": 60,
+"mindamage": 74,
+"minstaminadamage": 28,
+"physGuardCutRate": 0.0,
+"prefscalingid": 0,
+"requirementmultiplier": 1.0,
+"weaponCategory": 0,
+"wepMotionCategory": 20,
+"wepType": 1,
+"wepmotionBothHandId": 0,
+"wepmotionOneHandId": 0
+}, {
+"basename": "Sword",
+"baseweight": 3.5,
+"id": 1,
+"isdefensive": false,
+"maxdamage": 140,
+"maxstaminadamage": 60,
+"maxthrowAtkRate": 10,
+"mindamage": 102,
+"minstaminadamage": 45,
+"physGuardCutRate": 0.0,
+"prefscalingid": 5,
+"requirementmultiplier": 1.2,
+"weaponCategory": 1,
+"wepMotionCategory": 23,
+"wepType": 3,
+"wepmotionBothHandId": 0,
+"wepmotionOneHandId": 0
+}, {
+"basename": "Greatsword",
+"baseweight": 11.0,
+"id": 2,
+"isdefensive": false,
+"maxdamage": 166,
+"maxstaminadamage": 75,
+"maxthrowAtkRate": 0,
+"mindamage": 136,
+"minstaminadamage": 55,
+"physGuardCutRate": 0.0,
+"prefscalingid": 6,
+"requirementmultiplier": 1.4,
+"weaponCategory": 1,
+"wepMotionCategory": 25,
+"wepType": 5,
+"wepmotionBothHandId": 0,
+"wepmotionOneHandId": 0
+}, {
+"basename": "Mace",
+"baseweight": 4.5,
+"id": 5,
+"isdefensive": false,
+"maxdamage": 145,
+"maxstaminadamage": 76,
+"maxthrowAtkRate": 0,
+"mindamage": 115,
+"minstaminadamage": 56,
+"physGuardCutRate": 0.0,
+"prefscalingid": 4,
+"requirementmultiplier": 1.2,
+"weaponCategory": 5,
+"wepMotionCategory": 33,
+"wepType": 21,
+"wepmotionBothHandId": 0,
+"wepmotionOneHandId": 0
+}, {
+"basename": "Great Hammer",
+"baseweight": 8.5,
+"id": 6,
+"isdefensive": false,
+"maxdamage": 175,
+"maxstaminadamage": 85,
+"maxthrowAtkRate": 0,
+"mindamage": 131,
+"minstaminadamage": 0,
+"physGuardCutRate": 0.0,
+"prefscalingid": 7,
+"requirementmultiplier": 1.4,
+"weaponCategory": 5,
+"wepMotionCategory": 35,
+"wepType": 23,
+"wepmotionBothHandId": 12,
+"wepmotionOneHandId": 2
+}, {
+"basename": "Halberd",
+"baseweight": 8.0,
+"id": 7,
+"isdefensive": false,
+"maxdamage": 155,
+"maxstaminadamage": 81,
+"maxthrowAtkRate": 0,
+"mindamage": 125,
+"minstaminadamage": 61,
+"physGuardCutRate": 0.0,
+"prefscalingid": 2,
+"requirementmultiplier": 1.4,
+"weaponCategory": 7,
+"wepMotionCategory": 38,
+"wepType": 29,
+"wepmotionBothHandId": 0,
+"wepmotionOneHandId": 0
+}, {
+"basename": "Rapier",
+"baseweight": 4.5,
+"id": 3,
+"isdefensive": false,
+"maxdamage": 115,
+"maxstaminadamage": 50,
+"maxthrowAtkRate": 0,
+"mindamage": 96,
+"minstaminadamage": 33,
+"physGuardCutRate": 0.0,
+"prefscalingid": 0,
+"requirementmultiplier": 1.1,
+"weaponCategory": 2,
+"wepMotionCategory": 27,
+"wepType": 15,
+"wepmotionBothHandId": 10,
+"wepmotionOneHandId": 0
+} ]
+
+[resource]
+script = ExtResource( 1 )
+table = {
+"ArmorEffects": SubResource( 7 ),
+"Boons": ExtResource( 3 ),
+"DamageTypes": SubResource( 4 ),
+"Rarities": SubResource( 1 ),
+"ScalingOptions": ExtResource( 4 ),
+"TalismanInfo": SubResource( 6 ),
+"UpgradePaths": SubResource( 5 ),
+"WeaponModelIDs": SubResource( 2 ),
+"WeaponTypes": SubResource( 3 )
+}

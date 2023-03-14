@@ -1,0 +1,18 @@
+Godot Engine v3.4.4.stable.mono.official.419e713a2 - https://godotengine.org
+OpenGL ES 2.0 Renderer: NVIDIA GeForce GTX 1660 Ti/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+Mono: Log file is: 'C:/Users/diono/AppData/Roaming/Godot/mono/mono_logs/2023-03-10_10.44.48_18416.log'
+Default OverrideLore already exists!
+{Armor:{}, Weapon:{}}
+   At: res://Scripts/Data/LoreGenerator.gd:124:load_lore_overrides()
+[weapons, shields]
+   At: res://Scripts/WeaponBank.gd:25:_ready()
+eldenringshields.txt
+eldenringweapons.txt
+er_seals.txt
+er_staffs.txt
+er_unique_weapons.txt
+eldenringarmors.txt
+MROs Loaded: EarlyGame.txt 
+   At: res://Scripts/MaxRarityOverrideHandler.gd:64:load_mros()

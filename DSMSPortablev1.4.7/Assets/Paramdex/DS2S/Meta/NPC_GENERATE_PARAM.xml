@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMMETA XmlVersion="0">
+  <Self Row0Dummy="" />
+  <Field>
+    <NPCID Refs="NpcInfoParam" />
+    <RightWeaponID Refs="WeaponParam" />
+    <RightWeaponID Refs="WeaponParam" />
+    <RightWeaponID Refs="WeaponParam" />
+    <LeftWeaponID Refs="WeaponParam" />
+    <LeftWeaponID Refs="WeaponParam" />
+    <LeftWeaponID Refs="WeaponParam" />
+    <HeadArmorID Refs="ArmorParam" />
+    <ChestArmorID Refs="ArmorParam" />
+    <HandsArmorID Refs="ArmorParam" />
+    <LegsArmorID Refs="ArmorParam" />
+  </Field>
+</PARAMMETA>

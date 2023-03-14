@@ -1,0 +1,426 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Area_Difficulty_Adjuster",
+"language": "GDScript",
+"path": "res://Scripts/Area_Difficulty_Adjuster.gd"
+}, {
+"base": "Node",
+"class": "Armor_Bank",
+"language": "GDScript",
+"path": "res://Scripts/ArmorBank.gd"
+}, {
+"base": "Node",
+"class": "AutoInterpolate",
+"language": "GDScript",
+"path": "res://addons/keh_smooth/autointerpolate.gd"
+}, {
+"base": "Position3D",
+"class": "Cam3D",
+"language": "GDScript",
+"path": "res://addons/keh_nodes/cam3d/cam3d.gd"
+}, {
+"base": "Control",
+"class": "CustomControlBase",
+"language": "GDScript",
+"path": "res://addons/keh_ui/core/customctrlbase.gd"
+}, {
+"base": "Reference",
+"class": "DBHelpers",
+"language": "GDScript",
+"path": "res://addons/keh_gddb/editor/helpers.gd"
+}, {
+"base": "Resource",
+"class": "DBTable",
+"language": "GDScript",
+"path": "res://addons/keh_gddb/dbtable.gd"
+}, {
+"base": "Resource",
+"class": "DataAsset",
+"language": "GDScript",
+"path": "res://addons/keh_dataasset/dasset.gd"
+}, {
+"base": "Reference",
+"class": "EncDecBuffer",
+"language": "GDScript",
+"path": "res://addons/keh_general/data/encdecbuffer.gd"
+}, {
+"base": "Node",
+"class": "EnemySpecificLootBank",
+"language": "GDScript",
+"path": "res://Scripts/EnemySpecificLootBank.gd"
+}, {
+"base": "Reference",
+"class": "EntityInfo",
+"language": "GDScript",
+"path": "res://addons/keh_network/entityinfo.gd"
+}, {
+"base": "CustomControlBase",
+"class": "ExpandablePanel",
+"language": "GDScript",
+"path": "res://addons/keh_ui/expanel/expanel.gd"
+}, {
+"base": "Control",
+"class": "FancyLineEdit",
+"language": "GDScript",
+"path": "res://addons/keh_ui/fancy_line_edit.gd"
+}, {
+"base": "Resource",
+"class": "GDDatabase",
+"language": "GDScript",
+"path": "res://addons/keh_gddb/database.gd"
+}, {
+"base": "Reference",
+"class": "InputData",
+"language": "GDScript",
+"path": "res://addons/keh_network/inputdata.gd"
+}, {
+"base": "InventoryBase",
+"class": "InventoryBag",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/bag.gd"
+}, {
+"base": "Control",
+"class": "InventoryBase",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/base.gd"
+}, {
+"base": "Reference",
+"class": "InventoryCore",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/core.gd"
+}, {
+"base": "Reference",
+"class": "InventoryEvent",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/invevent.gd"
+}, {
+"base": "InventoryEvent",
+"class": "InventoryEventContainer",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/invcontevent.gd"
+}, {
+"base": "InventoryEvent",
+"class": "InventoryEventMouse",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/invmevent.gd"
+}, {
+"base": "InventoryEvent",
+"class": "InventoryEventSocket",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/invsocketevent.gd"
+}, {
+"base": "InventoryEventSocket",
+"class": "InventoryEventSocketMouse",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/invsocketmevent.gd"
+}, {
+"base": "Reference",
+"class": "InventoryHighlight",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/highlight.gd"
+}, {
+"base": "Reference",
+"class": "InventorySlot",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/slot.gd"
+}, {
+"base": "InventoryBase",
+"class": "InventorySpecialSlot",
+"language": "GDScript",
+"path": "res://addons/keh_ui/inventory/specialslot.gd"
+}, {
+"base": "Node",
+"class": "Loot_Bank",
+"language": "GDScript",
+"path": "res://Scripts/LootBank.gd"
+}, {
+"base": "Node",
+"class": "LoreGenerator",
+"language": "GDScript",
+"path": "res://Scripts/Data/LoreGenerator.gd"
+}, {
+"base": "Node",
+"class": "Max_Rarity_Override_Handler",
+"language": "GDScript",
+"path": "res://Scripts/MaxRarityOverrideHandler.gd"
+}, {
+"base": "Reference",
+"class": "NetCustomProperty",
+"language": "GDScript",
+"path": "res://addons/keh_network/customproperty.gd"
+}, {
+"base": "NetNodeSpawner",
+"class": "NetDefaultSpawner",
+"language": "GDScript",
+"path": "res://addons/keh_network/defaultspawner.gd"
+}, {
+"base": "Reference",
+"class": "NetEventInfo",
+"language": "GDScript",
+"path": "res://addons/keh_network/eventinfo.gd"
+}, {
+"base": "Reference",
+"class": "NetInputInfo",
+"language": "GDScript",
+"path": "res://addons/keh_network/inputinfo.gd"
+}, {
+"base": "Reference",
+"class": "NetNodeSpawner",
+"language": "GDScript",
+"path": "res://addons/keh_network/nodespawner.gd"
+}, {
+"base": "Reference",
+"class": "NetPingInfo",
+"language": "GDScript",
+"path": "res://addons/keh_network/pinginfo.gd"
+}, {
+"base": "Reference",
+"class": "NetPlayerData",
+"language": "GDScript",
+"path": "res://addons/keh_network/playerdata.gd"
+}, {
+"base": "Node",
+"class": "NetPlayerNode",
+"language": "GDScript",
+"path": "res://addons/keh_network/playernode.gd"
+}, {
+"base": "Reference",
+"class": "NetSnapshot",
+"language": "GDScript",
+"path": "res://addons/keh_network/snapshot.gd"
+}, {
+"base": "Reference",
+"class": "NetSnapshotData",
+"language": "GDScript",
+"path": "res://addons/keh_network/snapshotdata.gd"
+}, {
+"base": "Node",
+"class": "Network",
+"language": "GDScript",
+"path": "res://addons/keh_network/network.gd"
+}, {
+"base": "Reference",
+"class": "Quantize",
+"language": "GDScript",
+"path": "res://addons/keh_general/data/quantize.gd"
+}, {
+"base": "Node2D",
+"class": "Smooth2D",
+"language": "GDScript",
+"path": "res://addons/keh_smooth/smooth2d/smooth2d.gd"
+}, {
+"base": "Spatial",
+"class": "Smooth3D",
+"language": "GDScript",
+"path": "res://addons/keh_smooth/smooth3d/smooth3d.gd"
+}, {
+"base": "Reference",
+"class": "SnapEntityBase",
+"language": "GDScript",
+"path": "res://addons/keh_network/snapentity.gd"
+}, {
+"base": "Node",
+"class": "SpEffectGenerator",
+"language": "GDScript",
+"path": "res://Scripts/SpEffectGenerator.gd"
+}, {
+"base": "CustomControlBase",
+"class": "SpinSlider",
+"language": "GDScript",
+"path": "res://addons/keh_ui/spin_slider/spin_slider.gd"
+}, {
+"base": "CustomControlBase",
+"class": "TabularBox",
+"language": "GDScript",
+"path": "res://addons/keh_ui/tabular/tabularbox.gd"
+}, {
+"base": "Resource",
+"class": "TabularDataSourceBase",
+"language": "GDScript",
+"path": "res://addons/keh_ui/tabular/datasourcebase.gd"
+}, {
+"base": "TabularDataSourceBase",
+"class": "TabularSimpleDataSource",
+"language": "GDScript",
+"path": "res://addons/keh_ui/tabular/simpleds.gd"
+}, {
+"base": "Reference",
+"class": "TabularStyler",
+"language": "GDScript",
+"path": "res://addons/keh_ui/tabular/styler.gd"
+}, {
+"base": "Node",
+"class": "Talisman_Generator",
+"language": "GDScript",
+"path": "res://Scripts/Talisman_Generator.gd"
+}, {
+"base": "Reference",
+"class": "UIHelper",
+"language": "GDScript",
+"path": "res://addons/keh_ui/core/uihelpers.gd"
+}, {
+"base": "Node",
+"class": "Weapon_Bank",
+"language": "GDScript",
+"path": "res://Scripts/WeaponBank.gd"
+}, {
+"base": "Node",
+"class": "Weapon_Generator",
+"language": "GDScript",
+"path": "res://Scripts/Weapon_Generator.gd"
+}, {
+"base": "Reference",
+"class": "_SmoothCore",
+"language": "GDScript",
+"path": "res://addons/keh_smooth/smoothcore.gd"
+} ]
+_global_script_class_icons={
+"Area_Difficulty_Adjuster": "",
+"Armor_Bank": "",
+"AutoInterpolate": "",
+"Cam3D": "",
+"CustomControlBase": "",
+"DBHelpers": "",
+"DBTable": "",
+"DataAsset": "",
+"EncDecBuffer": "",
+"EnemySpecificLootBank": "",
+"EntityInfo": "",
+"ExpandablePanel": "",
+"FancyLineEdit": "res://addons/keh_ui/fancy_line_edit.png",
+"GDDatabase": "",
+"InputData": "",
+"InventoryBag": "res://addons/keh_ui/inventory/bag.png",
+"InventoryBase": "",
+"InventoryCore": "",
+"InventoryEvent": "",
+"InventoryEventContainer": "",
+"InventoryEventMouse": "",
+"InventoryEventSocket": "",
+"InventoryEventSocketMouse": "",
+"InventoryHighlight": "",
+"InventorySlot": "",
+"InventorySpecialSlot": "res://addons/keh_ui/inventory/specialslot.png",
+"Loot_Bank": "",
+"LoreGenerator": "",
+"Max_Rarity_Override_Handler": "",
+"NetCustomProperty": "",
+"NetDefaultSpawner": "",
+"NetEventInfo": "",
+"NetInputInfo": "",
+"NetNodeSpawner": "",
+"NetPingInfo": "",
+"NetPlayerData": "",
+"NetPlayerNode": "",
+"NetSnapshot": "",
+"NetSnapshotData": "",
+"Network": "",
+"Quantize": "",
+"Smooth2D": "",
+"Smooth3D": "",
+"SnapEntityBase": "",
+"SpEffectGenerator": "",
+"SpinSlider": "",
+"TabularBox": "",
+"TabularDataSourceBase": "",
+"TabularSimpleDataSource": "",
+"TabularStyler": "",
+"Talisman_Generator": "",
+"UIHelper": "",
+"Weapon_Bank": "",
+"Weapon_Generator": "",
+"_SmoothCore": ""
+}
+
+[application]
+
+config/name="Diablo Style Loot for Elden Ring"
+run/main_scene="res://Scenes/MainScene.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+WeaponGenDefaultArrays="*res://Scripts/Data/WeaponGen_DefaultArrays.gd"
+SwordArtsParam="*res://Scripts/Data/SwordArtsParam.gd"
+GlobalFunctions="*res://Scripts/Globals/GlobalFunctions.gd"
+
+[display]
+
+window/size/width=1280
+window/size/height=640
+window/energy_saving/keep_screen_on=false
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/keh_dataasset/plugin.cfg" )
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+ui_accept={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777221,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777222,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_select={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_cancel={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[mono]
+
+project/assembly_name="Diablo Style Loot for Elden Ring"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
